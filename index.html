@@ -45,9 +45,9 @@
 
         <div id="navlinks">
 
-            <a href="/about.html">About</a>
-            <a href="/portfolio.html">Portfolio</a>
-            <a href="/contact.html">Contact</a>
+            <a href="#about-box">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
 
 
         </div>
@@ -76,7 +76,7 @@
 
     <!-- About -->
 
-    <div id="about">
+    <div id="about" name="about-box">
 
         <div id="about-box">
 
@@ -150,43 +150,45 @@
         </div>
     </div>
 
+    <div id="skills-education">
+        <div id="skills-education-flex">
+
+            <!-- Skills -->
+
+            <div id="skills">
 
 
 
-    <!-- Skills -->
+                <h1>Skills</h1>
 
-    <div id="skills">
+                <div class="hideExperience" id="skills-card">
 
+                    <p>Web content management, web copy, copywriting, Magento, SEMRush, SEO, SEO content writing, Microsoft, Excel, HTML, CSS, content development, content strategy, Publisher, Google Suite, creative writing, CMS, email marketing, SEO, Romance author on the side</p>
+                    <p><strong>Learning roadmap:</strong> Javascript, PHP, Python; <a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank">following the frontend developer roadmap</a></p>
+                </div>
 
-
-        <h1>Skills</h1>
-        
-        <div class="hideExperience">
-
-        <p>Web content management, web copy, copywriting, Magento, SEMRush, SEO, SEO content writing, Microsoft, Excel, HTML, CSS, content development, content strategy, Publisher, Google Suite, creative writing, CMS, email marketing, SEO, Romance author on the side</p>
-        <p><strong>Learning roadmap:</strong> Javascript, PHP, Python; <a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank">following the frontend developer roadmap</a></p>
-</div>
-
-    </div>
-
-
-
-
-    <!-- Education -->
-
-    <div id="education">
-    <div id="education-wrapper">
-       
-        
-
-                <h1>Education</h1>
-         <div class="hideExperience">
-                <h2>B.A., English (Professional and Technical Writing)</h2>
-                <h3>San Jose State University, December 2015</h3>
-                <p>Focus on technical writing, copy editing, substantive editing and reorganization of technical documents, as well as audience analysis and development of reader-based writing techniques. Work with student-led and edited school literary journal, Reed Magazine.</p>
             </div>
 
 
+
+
+            <!-- Education -->
+
+            <div id="education">
+                <div id="education-wrapper">
+
+
+
+                    <h1>Education</h1>
+                    <div class="hideExperience" id="skills-card">
+                        <h2>B.A., English (Professional and Technical Writing)</h2>
+                        <h3>San Jose State University, December 2015</h3>
+                        <p>Focus on technical writing, copy editing, substantive editing and reorganization of technical documents, as well as audience analysis and development of reader-based writing techniques. Work with student-led and edited school literary journal, Reed Magazine.</p>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -237,6 +239,7 @@
             $('html, body').animate({
                 scrollTop: $("#about-box").offset().top
             }, 1000);
+
         });
 
         //Mobile Nav Overlay
@@ -281,7 +284,6 @@
             });
 
         });
-
     </script>
 </body>
 
