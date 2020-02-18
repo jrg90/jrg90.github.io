@@ -404,14 +404,53 @@ nav h3 {
 
 }
 
+/*Skills and Education Wrapper */
+
+#skills-education {
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+}
+
+#skills-education-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* Mobile Skills and Education */
+
+@media only screen and (max-width: 820px) {
+    
+    #skills-education-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    
+    #education, #skills {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    
+    }
+}
+
 
 /* Desktop Skills */
 
 #skills {
-    width: 100vw;
-    margin: 0 auto;
-    float: left;
-    margin-bottom: 80px;
+    margin-right: 10px;
+    min-width: 380px;
+    
+}
+
+#skills-card {
+    width: inherit;
+    margin:0px;
+    padding: 15px 15px 15px 15px;
 
 }
 
@@ -425,15 +464,13 @@ nav h3 {
 
 
 #education {
-    width: 100vw;
-    margin: 0 auto;
-    float: left;
+    
+    margin-left: 10px;
+    min-width: 380px;
+    
 }
 
 
-#education-wrapper {
-    margin: 0 auto;
-}
 
 #education-wrapper h1 {
     color: #114b5f;
